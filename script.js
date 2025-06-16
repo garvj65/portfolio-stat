@@ -1,26 +1,28 @@
-// Theme toggle logic
-const toggle = document.getElementById("theme-toggle");
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const form = document.getElementById("contact-form");
 
-// Scroll animation
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
+  // Smooth scroll
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
   });
-}, {
-  threshold: 0.1
-});
 
-document.querySelectorAll(".section").forEach(section => {
-  observer.observe(section);
-});
+  // Fake contact form handling
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
 
-// Form stub (can be extended)
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("📨 Message sent!");
+    alert(`Thanks ${name.value}! I’ll get back to you at ${email.value}.`);
+    name.value = "";
+    email.value = "";
+    message.value = "";
+  });
 });

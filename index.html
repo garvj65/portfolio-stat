@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garv's Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="navbar">
-    <nav>
-      <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garv Jhajharia | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">Garv</div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle">🌓</button></li>
       </ul>
     </nav>
-  </header>
 
-  <main>
-    <section id="home" class="section fade-in">
-      <h1>Hi, I'm Garv Jhajharia</h1>
-      <p>CS student | Full Stack Dev | Curious Creator</p>
+    <section id="home" class="section center">
+      <img src="https://avatars.githubusercontent.com/u/106823553?v=4" alt="Garv Avatar" class="avatar" />
+      <h1>Hi, I'm <span class="highlight">Garv Jhajharia</span></h1>
+      <p>
+        A <strong>CS student</strong> and <strong>Full Stack Developer</strong> who
+        crafts cool experiences with code.
+      </p>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Contact Me</a>
+        <a href="Garv_Resume.pdf" class="btn secondary" download>Download Resume</a>
+      </div>
     </section>
 
-    <section id="about" class="section fade-in">
+    <section id="about" class="section">
       <h2>About Me</h2>
-      <p>I build cool things with code and creativity. Currently pursuing BTech CS and hacking on projects.</p>
+      <p>
+        I build fun, useful web apps and love learning new technologies.
+        Currently pursuing BTech in Computer Science. From ML to full-stack, I'm always exploring.
+      </p>
     </section>
 
-    <section id="projects" class="section fade-in">
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <ul>
-        <li>AI Quote Generator</li>
-        <li>TravelGenius LLM App</li>
-        <li>VRMMORPG Concept</li>
+      <ul class="bullet-list">
+        <li><strong>AI Quote Generator</strong> — Generates fantasy quotes using Groq LLM</li>
+        <li><strong>TravelGenius</strong> — AI-powered travel planner</li>
+        <li><strong>VRMMORPG Concept</strong> — Virtual world simulation project</li>
       </ul>
     </section>
 
-    <section id="skills" class="section fade-in">
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <p>React, Next.js, Python, C++, Tailwind, OpenAI API, MySQL, Docker, Terraform</p>
+      <p>React, Next.js, Python, C++, Tailwind, MySQL, Terraform, OpenAI API, GitHub Actions</p>
     </section>
 
-    <section id="experience" class="section fade-in">
+    <section id="experience" class="section">
       <h2>Experience</h2>
-      <p>2 years of project-based learning. Internships coming soon 👀</p>
+      <p>2+ years of hands-on projects, internships coming soon 👀</p>
     </section>
 
-    <section id="contact" class="section fade-in">
+    <section id="contact" class="section">
       <h2>Contact Me</h2>
       <form id="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send</button>
       </form>
     </section>
-  </main>
 
-  <footer>
-    <p>Made with ☕ &lt;/&gt; by Garv | MIT Licensed</p>
-  </footer>
+    <footer class="footer">
+      <p>Made with ☕ by Garv | MIT License</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
