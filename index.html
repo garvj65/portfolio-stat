@@ -7,10 +7,65 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Garv!</h1>
-    <p>CS Student | Developer | Creative Thinker</p>
-    <a href="https://github.com/garvj65" target="_blank">Visit my GitHub</a>
-  </div>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section fade-in">
+      <h1>Hi, I'm Garv Jhajharia</h1>
+      <p>CS student | Full Stack Dev | Curious Creator</p>
+    </section>
+
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>I build cool things with code and creativity. Currently pursuing BTech CS and hacking on projects.</p>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li>AI Quote Generator</li>
+        <li>TravelGenius LLM App</li>
+        <li>VRMMORPG Concept</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <h2>Skills</h2>
+      <p>React, Next.js, Python, C++, Tailwind, OpenAI API, MySQL, Docker, Terraform</p>
+    </section>
+
+    <section id="experience" class="section fade-in">
+      <h2>Experience</h2>
+      <p>2 years of project-based learning. Internships coming soon 👀</p>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ☕ &lt;/&gt; by Garv | MIT Licensed</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
