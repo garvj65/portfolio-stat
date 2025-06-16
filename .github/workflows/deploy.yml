@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write  # 👈 needed for deployment
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
